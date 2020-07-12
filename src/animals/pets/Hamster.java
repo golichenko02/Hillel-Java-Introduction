@@ -1,4 +1,5 @@
-package animals;
+package animals.pets;
+
 
 public class Hamster extends Pet {
     public Hamster(int age, double weight, String color, String name, boolean isVaccinated) {

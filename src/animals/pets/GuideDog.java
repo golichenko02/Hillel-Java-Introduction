@@ -1,6 +1,7 @@
-package animals;
+package animals.pets;
 
-public class GuideDog extends Pet{
+
+public class GuideDog extends Pet {
     private boolean isTrained;
 
 
@@ -9,16 +10,14 @@ public class GuideDog extends Pet{
         this.isTrained = isTrained;
     }
 
+    @Override
+    public String greeting() {
+        return isTrained ? super.greeting() + ". I can take you home" : super.greeting();
+    }
 
-
-    public void takeHome(){
+    public void takeHome() {
         System.out.println("Идем с хозяином домой!");
     }
 
-    @Override
-    public String voice() {
-        if (isTrained)
-            return super.voice() + " I can take you home.";
-        return super.voice();
-    }
+
 }

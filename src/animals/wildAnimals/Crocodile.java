@@ -1,6 +1,7 @@
-package animals;
+package animals.wildAnimals;
 
-public class Crocodile extends WildAnimal{
+
+public class Crocodile extends WildAnimal {
     public Crocodile(int age, double weight, String color, boolean isPredator) {
         super(age, weight, color, isPredator);
     }

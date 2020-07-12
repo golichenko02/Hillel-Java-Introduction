@@ -1,4 +1,5 @@
-package animals;
+package animals.pets;
+
 
 public class Dog extends Pet {
 
@@ -6,9 +7,5 @@ public class Dog extends Pet {
         super(age, weight, color, name, isVaccinated);
     }
 
-    @Override
-    public String voice() {
-        System.out.println("Woof");
-        return super.voice();
-    }
+
 }

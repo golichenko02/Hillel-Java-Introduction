@@ -1,4 +1,5 @@
-package animals;
+package animals.wildAnimals;
+
 
 public class Lion extends WildAnimal {
     public Lion(int age, double weight, String color, boolean isPredator) {
