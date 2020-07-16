@@ -2,7 +2,7 @@ package animals;
 
 import animals.pets.Pet;
 
-public interface Voice {
+public interface IVoice {
 
 
     default String greeting() {

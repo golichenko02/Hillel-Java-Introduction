@@ -2,9 +2,9 @@ package animals.wildAnimals;
 
 
 import animals.Animal;
-import animals.Voice;
+import animals.IVoice;
 
-public abstract class WildAnimal extends Animal implements Voice {
+public abstract class WildAnimal extends Animal implements IVoice {
     private boolean isPredator;
 
     public WildAnimal(int age, double weight, String color, boolean isPredator) {
@@ -14,6 +14,6 @@ public abstract class WildAnimal extends Animal implements Voice {
 
     @Override
     public String greeting() {
-        return isPredator ? Voice.super.greeting() + " and I am angry " : Voice.super.greeting();
+        return isPredator ? IVoice.super.greeting() + " and I am angry " : IVoice.super.greeting();
     }
 }

@@ -1,10 +1,10 @@
 package animals.pets;
 
 import animals.Animal;
-import animals.Voice;
+import animals.IVoice;
 
 
-public abstract class Pet extends Animal implements Voice {
+public abstract class Pet extends Animal implements IVoice {
     private String name;
     private boolean isVaccinated;
 
@@ -29,7 +29,7 @@ public abstract class Pet extends Animal implements Voice {
         if (this instanceof Fish)
             System.out.println("....");
 
-        return Voice.super.greeting();
+        return IVoice.super.greeting();
 
     }
 
