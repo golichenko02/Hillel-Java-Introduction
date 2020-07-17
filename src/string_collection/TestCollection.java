@@ -3,31 +3,41 @@ package string_collection;
 
 public class TestCollection {
     public static void main(String[] args) {
-        StringCollection strings = new StringCollection(4);
-        strings.add("one");
-        strings.add("two");
-        strings.add("three");
-        strings.add("four");
-        strings.add("five");
-        strings.add("six");
-        strings.add("seven");
-        strings.add("eight");
-        strings.add("nine");
-        strings.add("ten");
+        StringCollection firstGroup = new StringCollection();
+        StringCollection secondGroup = new StringCollection();
 
-        strings.showAll();
+        secondGroup.add("Vova");
+        secondGroup.add("Liza");
 
-        System.out.println(strings.get(10));
-        System.out.println(strings.get(11));
-        System.out.println(strings.get(12));
-        System.out.println(strings.get(8));
+        firstGroup.add("Vova");
+        firstGroup.add("Liza");
+
+        System.out.println(firstGroup.equals(secondGroup));//true
+
+        firstGroup.add("Olia");
+        firstGroup.add("Masha");
+
+        System.out.println(firstGroup.equals(secondGroup));//false
 
 
-        strings.delete(9);
-        strings.delete(8);
-        strings.delete("five");
+        firstGroup.add(0, "Vlad");
+        firstGroup.add(0, "Valera");
+        firstGroup.add(6, "Ksenia");
+        firstGroup.showAll();
 
-        strings.showAll();
+        System.out.println(firstGroup.contains("Vlad")); //true
+        System.out.println(firstGroup.get(0)); // Valera
+        firstGroup.delete("Ksenia");
+        firstGroup.delete(2);
+        System.out.println(firstGroup.size());// 5
+
+        firstGroup.showAll();
+        firstGroup.clear();
+        System.out.println(firstGroup.size());// 0
+        firstGroup.showAll(); //empty list
+
+//        System.out.println(firstGroup.contains("vlad"));
+//        System.out.println(firstGroup.get(5));
 
 
     }

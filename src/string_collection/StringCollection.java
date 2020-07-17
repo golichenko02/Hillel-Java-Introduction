@@ -1,34 +1,18 @@
 package string_collection;
 
 
-public class StringCollection {
-    private int length;
+public class StringCollection implements Collection {
+
     private String[] list;
-    private int lastIndex = 0;
+    private int count = 0;
 
     public StringCollection() {
-        this.length = 10;
-        this.list = new String[length];
+        this.list = new String[10];
     }
 
-    public StringCollection(int size) {
-        this.length = size;
-        this.list = new String[size];
-    }
-
-    public void add(String e) {
-        if (lastIndex == length) {
-            this.list = newList(list);
-            list[lastIndex++] = e;
-        } else {
-            list[lastIndex] = e;
-            lastIndex++;
-        }
-    }
 
     private String[] newList(String[] list) {
-        length = list.length * 3 / 2 + 1;
-        String[] newList = new String[length];
+        String[] newList = new String[list.length * 3 / 2 + 1];
         int i = 0;
         for (String s : list) {
             newList[i] = s;
@@ -38,37 +22,124 @@ public class StringCollection {
     }
 
 
-    public String get(int index) {
-        if (index >= length || index < 0) {
-            return "-1";
+    @Override
+    public boolean add(Object o) {
+        if (count == list.length) {
+            this.list = newList(list);
+            list[count++] = (String) o;
         } else {
-            return list[index] == null ? "empty cell" : list[index];
+            list[count++] = (String) o;
         }
-    }
-
-    public boolean delete(int index) {
-        if (index >= length && index < 0) return false;
-        for (int i = index; i <= lastIndex - 1; i++) {
-            list[i] = list[i + 1];
-        }
-        lastIndex--;
         return true;
-
     }
 
-    public boolean delete(String s) {
-        if (s == null) return false;
-        for (int i = 0; i < lastIndex; i++) {
-            if (list[i].equals(s))
+    @Override
+    public boolean add(int index, Object o) {
+        if (index > count || index < 0) {
+            throw new IndexOutOfBoundsException("Index: " + index + " Size: " + count);
+        }
+        if (index == count) {
+            list[count++] = (String) o;
+            return true;
+        }
+
+        for (int i = count; i > index; i--) {
+            list[i] = list[i - 1];
+        }
+        list[index] = (String) o;
+        count++;
+        return true;
+    }
+
+    @Override
+    public boolean delete(Object o) {
+        if (o == null) return false;
+        for (int i = 0; i < count; i++) {
+            if (list[i].equals(o))
                 delete(i);
         }
         return true;
     }
 
+    @Override
+    public Object get(int index) {
+        if (index >= list.length || index < 0)
+            return "-1";
+        return list[index];
+    }
+
+
+    @Override
+    public boolean contains(Object o) {
+        if (count == 0) return false;
+        for (int i = 0; i < count; i++) {
+            if (list[i].equals(o)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean equals(Collection str) {
+        if (this == str) {
+            return true;
+        }
+
+        if (this.size() != str.size()) {
+            return false;
+        }
+
+        int i = 0, counter = 0;
+
+        while (i < this.size()) {
+            if (this.list[i].equals(str.get(i))) {
+                counter++;
+            }
+            i++;
+        }
+
+        if (counter == this.size()) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean clear() {
+        if (count == 0) return true;
+        for (int i = 0; i < list.length; i++) {
+            list[i] = null;
+        }
+        count = 0;
+        return true;
+    }
+
+    @Override
+    public int size() {
+        return count;
+    }
+
+    public boolean delete(int index) {
+        if (index >= list.length || index < 0) return false;
+        for (int i = index; i <= count - 1; i++) {
+            list[i] = list[i + 1];
+        }
+        count--;
+        return true;
+
+    }
+
+
     public void showAll() {
-        for (int i = 0; i < lastIndex; i++) {
+        System.out.println("----------------");
+        if (count == 0) System.out.println("EMPTY LIST");
+        for (int i = 0; i <= count; i++) {
+            if (list[i] == null) break;
             System.out.println(i + 1 + ". " + list[i]);
         }
+        System.out.println("----------------");
     }
+
 
 }
