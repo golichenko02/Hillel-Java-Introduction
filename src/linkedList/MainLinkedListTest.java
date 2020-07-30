@@ -18,7 +18,7 @@ public class MainLinkedListTest {
 
         linkedList.insert("a");
         showLinkedList(linkedList);
-        System.out.println(linkedList.contain("6"));
+        System.out.println(linkedList.contains("6"));
 
 
     }

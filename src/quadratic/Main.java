@@ -3,13 +3,6 @@ package quadratic;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- * На языке программирования JAVA создать консольное приложение, которое решает квадратные уравнения вида
- * [ax^2+bx+c=0] через дискриминант.
- * Приложение должно получать входные данные уравнения через консольный ввод и выводить шаги решения
- * и само решение через консольный вывод.
- * По окончанию решения пользователю должно быть предложено начать решение сначала.
- */
 
 public class Main {
     static double a, b, c;
@@ -44,7 +37,9 @@ public class Main {
             separator(s);
         } catch (InputMismatchException e) {
             System.out.println("Invalid number format");
-            a = 0; b = 0; c = 0;
+            a = 0;
+            b = 0;
+            c = 0;
             repeat(false);
         }
     }
