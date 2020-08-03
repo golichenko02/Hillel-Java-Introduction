@@ -1,7 +1,7 @@
 package linkedList;
 
 
-public class OurLinkedList implements CustomCollection {
+public class MyLinkedList implements CustomCollection {
     private Node head; // всегда расположен в крайней левой позиции
     private Node tail; // всегда расположен в крайней правой позиции
     private int counter;
@@ -142,7 +142,7 @@ public class OurLinkedList implements CustomCollection {
     }
 
     @Override
-    public boolean addAll(OurLinkedList strColl) {
+    public boolean addAll(MyLinkedList strColl) {
         if (strColl.isEmpty()) return false;
 
         Node currentNode = strColl.head;
@@ -150,7 +150,7 @@ public class OurLinkedList implements CustomCollection {
             this.addLast(currentNode.getElement());
             currentNode = currentNode.getNext();
         }
-        counter += strColl.counter;
+
         return true;
     }
 
@@ -176,6 +176,7 @@ public class OurLinkedList implements CustomCollection {
 
     @Override
     public boolean delete(String str) {
+
         Node currentNode = head;
         while (!currentNode.getElement().equals(str)) {
             currentNode = currentNode.getNext();
@@ -226,24 +227,24 @@ public class OurLinkedList implements CustomCollection {
     @Override
     public boolean trim() {
         if (isEmpty()) return false;
-        int index = 0, count = 0;
+        int count = 0;
         Node currentNode = head;
-        while (index <= counter) {
+        while (currentNode != null) {
             if (currentNode.getElement() == null) {
-                currentNode = currentNode.getNext();
-                delete(index);
+                Node next = currentNode.getNext();
+                delete(currentNode);
                 count++;
-                index++;
+                currentNode = next;
                 continue;
             }
             currentNode = currentNode.getNext();
-            index++;
+
         }
         return count > 0;
     }
 
     @Override
-    public boolean compare(OurLinkedList coll) {
+    public boolean compare(MyLinkedList coll) {
 
         if (this == coll) {
             return true;

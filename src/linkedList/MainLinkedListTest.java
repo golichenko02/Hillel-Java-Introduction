@@ -3,8 +3,8 @@ package linkedList;
 
 public class MainLinkedListTest {
     public static void main(String[] args) {
-        OurLinkedList linkedList = new OurLinkedList();
-        OurLinkedList test = new OurLinkedList();
+        MyLinkedList linkedList = new MyLinkedList();
+        MyLinkedList test = new MyLinkedList();
 
 
         linkedList.addLast("1");
@@ -18,6 +18,7 @@ public class MainLinkedListTest {
         linkedList.addFirst("-2");
         linkedList.insert("a");
         linkedList.insertAfter("4", "4.5");
+
 
         System.out.println(linkedList.size());// 11
         showLinkedList(linkedList); // -2; -1; 0; 1; a; 2; 3; 4; 4.5; 5; 6;
@@ -62,14 +63,24 @@ public class MainLinkedListTest {
         test.addFirst(null);
         test.addLast(null);
         test.insert(null);
-        showLinkedList(test);
+        showLinkedList(test);// null; 7; 8; 9; null; b; c; d; e; null;
         test.trim();
-        showLinkedList(test);
+        showLinkedList(test);//7; 8; 9; b; c; d; e;
+
+        linkedList.addAll(test);
+        showLinkedList(linkedList); // 7; 8; 9; b; c; d; e;
+        System.out.println(linkedList.compare(test));//true
+        System.out.println(test.compare(linkedList));//true
+        linkedList.addLast("j");
+        showLinkedList(linkedList); // 7; 8; 9; b; c; d; e; j;
+        test.addLast("k");
+        showLinkedList(test);// 7; 8; 9; b; c; d; e; k;
+        System.out.println(linkedList.compare(test));//false
 
 
     }
 
-    public static void showLinkedList(OurLinkedList linkedList) {
+    public static void showLinkedList(MyLinkedList linkedList) {
         if (linkedList.isEmpty()) {
             System.out.println("Empty list");
             return;

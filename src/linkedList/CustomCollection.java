@@ -13,7 +13,7 @@ public interface CustomCollection {
 
     boolean addAll(String[] strArr);// ++
 
-    boolean addAll(OurLinkedList strColl);//++
+    boolean addAll(MyLinkedList strColl);//++
 
     boolean delete(int index);//++
 
@@ -29,7 +29,7 @@ public interface CustomCollection {
 
     boolean trim();// ++
 
-    boolean compare(OurLinkedList coll);
+    boolean compare(MyLinkedList coll);
 
     boolean isEmpty();//++
 }
