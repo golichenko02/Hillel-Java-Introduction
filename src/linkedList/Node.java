@@ -1,7 +1,7 @@
 package linkedList;
 
 public class Node {
-   private String element;
+   private final String element;
 
    private Node next;
    private Node prev;

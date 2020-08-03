@@ -11,25 +11,26 @@ public interface CustomCollection {
     boolean insertAfter(String key, String value); // вставка после заданного значения +
 
 
-    boolean addAll(String[] strArr);
+    boolean addAll(String[] strArr);// ++
 
-    boolean addAll(CustomCollection strColl);
+    boolean addAll(OurLinkedList strColl);//++
 
-    boolean delete(int index);//+
+    boolean delete(int index);//++
 
-    boolean delete(String str); // +
+    boolean delete(String str); //++
 
-    String get(int index); // +
+    String get(int index); // ++
 
-    boolean contains(String str); // +
+    boolean contains(String str); // ++
 
-    boolean clear(); // +
+    boolean clear(); // ++
 
-    int size(); // +
+    int size(); // ++
 
-    boolean trim();
+    boolean trim();// ++
 
-    boolean compare(CustomCollection coll);
+    boolean compare(OurLinkedList coll);
 
+    boolean isEmpty();//++
 }
 
