@@ -54,17 +54,18 @@ public class StringCollection implements Collection {
     @Override
     public boolean delete(Object o) {
         if (o == null) return false;
+        int temp = count;
         for (int i = 0; i < count; i++) {
             if (list[i].equals(o))
                 delete(i);
         }
-        return true;
+        return count < temp;
     }
 
     @Override
     public Object get(int index) {
-        if (index >= list.length || index < 0)
-            return "-1";
+        if (index >= count || index < 0)
+            throw new IndexOutOfBoundsException("Index: " + index + " Size: " + count);
         return list[index];
     }
 
@@ -107,7 +108,7 @@ public class StringCollection implements Collection {
 
     @Override
     public boolean clear() {
-        if (count == 0) return true;
+        if (count == 0) return false;
         for (int i = 0; i < list.length; i++) {
             list[i] = null;
         }
@@ -121,7 +122,7 @@ public class StringCollection implements Collection {
     }
 
     public boolean delete(int index) {
-        if (index >= list.length || index < 0) return false;
+        if (index >= count || index < 0) return false;
         for (int i = index; i <= count - 1; i++) {
             list[i] = list[i + 1];
         }
