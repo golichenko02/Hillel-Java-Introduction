@@ -1,0 +1,14 @@
+{
+  "firstName": "Volodymyr",
+  "lastName": "Holichenko",
+  "age": 18,
+  "contacts": {
+    "phone": "063-541-95-09",
+    "email": "holichenko@email.com"
+  },
+  "address": {
+    "city": "Ovidiopol",
+    "street": "Gagarina",
+    "number": 20
+  }
+}
