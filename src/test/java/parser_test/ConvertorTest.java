@@ -9,9 +9,9 @@ import java.io.File;
 import java.io.IOException;
 
 public class ConvertorTest {
-    private String[] humanJson = {"C:\\Users\\38063\\IdeaProjects\\HomeworkIntro\\src\\main\\java\\parser\\resources\\human.json"};
-    private String[] humanYaml = {"C:\\Users\\38063\\IdeaProjects\\HomeworkIntro\\src\\main\\java\\parser\\resources\\human.yaml"};
-    private File resultsDir = new File("C:\\Users\\38063\\IdeaProjects\\HomeworkIntro\\src\\main\\java\\parser\\convert_results");
+    private String[] humanJson = {"src/main/resources/resources_for_parsing/human.json"};
+    private String[] humanYaml = {"src/main/resources/resources_for_parsing/human.yaml"};
+    private File resultsDir = new File("src/main/java/parser/convert_results");
 
 
     @Before
