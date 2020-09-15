@@ -56,11 +56,11 @@ public class Convertor {
     private static Boolean checkFormat(String filePath) {
         String substring = filePath.substring(filePath.indexOf("."), filePath.length());
         if (substring.equals(".yaml")) {
-            path = new File("src/main/java/parser/convert_results/humanFromYaml.json");
+            path = new File("src/main/resources/convert_results/humanFromYaml.json");
             return true;
         }
         if (substring.equals(".json")) {
-            path = new File("src/main/java/parser/convert_results/humanFromJson.yaml");
+            path = new File("src/main/resources/convert_results/humanFromJson.yaml");
             return false;
         }
         return null;

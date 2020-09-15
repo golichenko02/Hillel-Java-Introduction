@@ -11,7 +11,7 @@ import java.io.IOException;
 public class ConvertorTest {
     private String[] humanJson = {"src/main/resources/resources_for_parsing/human.json"};
     private String[] humanYaml = {"src/main/resources/resources_for_parsing/human.yaml"};
-    private File resultsDir = new File("src/main/java/parser/convert_results");
+    private File resultsDir = new File("src/main/resources/convert_results");
 
 
     @Before
