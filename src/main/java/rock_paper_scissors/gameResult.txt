@@ -13,3 +13,8 @@ You have played 4 games
 -----Score-----
 Draws:2 Computer:2  Player: 0
 
+
+You have played 4 games
+-----Score-----
+Draws:0 Computer:3  Player: 1
+
