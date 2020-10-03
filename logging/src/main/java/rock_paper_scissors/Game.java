@@ -12,11 +12,12 @@ public class Game {
     public static void main(String[] args) {
 
         rules.startGame();
+        rules.getLogger().info("Game over!");
         saveResult();
     }
 
     private static void saveResult() {
-        File filePath = new File("C:\\Users\\38063\\IdeaProjects\\HomeworkIntro\\src\\main\\java\\rock_paper_scissors\\gameResult.txt");
+        File filePath = new File("C:\\Users\\38063\\IdeaProjects\\HomeworkIntro\\logging\\src\\main\\java\\rock_paper_scissors\\gameResult.txt");
         try (FileOutputStream fos = new FileOutputStream(filePath, true);
              PrintStream printStream = new PrintStream(fos)) {
             printStream.println();

@@ -1,9 +1,12 @@
 package rock_paper_scissors;
 
 import lombok.Getter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 
 public class Rules {
     private int countOfGames;
@@ -18,9 +21,15 @@ public class Rules {
     @Getter
     private Computer computer = new Computer();
 
+    @Getter
+    private final Logger logger = LoggerFactory.getLogger(Rules.class);
+
+
     public void startGame() {
+        logger.info("Player entered the game");
         System.out.println("Hi! Let's play:) Input \"exit\" if you want to stop game; ");
         inputCount();
+        logger.info("Player chose {} games", countOfGames);
         while (!choice.toLowerCase().equals("exit") && counter < countOfGames) {
             Item computerChoice = computer.choice();
             System.out.println("r/R - Rock, p/P - Paper, s/S - Scissors");
@@ -28,6 +37,7 @@ public class Rules {
             choice = scanner.nextLine();
 
             if (choice.toLowerCase().equals("exit")) {
+                logger.info("Player left the game by pressing exit");
                 checkScore();
                 System.out.println("Game over!");
                 continue;
@@ -36,6 +46,7 @@ public class Rules {
                 continue;
             }
 
+            logger.info("Player: {}  Computer: {}", choice, computerChoice);
             System.out.println("Computer item: " + computerChoice);
             Boolean result = checkWinner(player.choice(choice), computerChoice);
             if (result == null) {
@@ -49,6 +60,7 @@ public class Rules {
                 computer.setScore(computer.getScore() + 1);
             }
             counter++;
+            logger.info("Player have played {} of {} games", counter, countOfGames);
         }
     }
 
@@ -79,4 +91,5 @@ public class Rules {
         }
 
     }
+
 }
