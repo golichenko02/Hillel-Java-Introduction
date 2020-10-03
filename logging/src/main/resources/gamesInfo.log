@@ -1,0 +1,80 @@
+2020-10-03 20:34:49 [main] INFO  rock_paper_scissors.Rules - Player entered the game
+2020-10-03 20:34:53 [main] INFO  rock_paper_scissors.Rules - Player chose 10 games
+2020-10-03 20:34:56 [main] INFO  rock_paper_scissors.Rules - Player: R  Computer: PAPER
+2020-10-03 20:34:56 [main] INFO  rock_paper_scissors.Rules - Player have played 1 of 10 games
+2020-10-03 20:34:58 [main] INFO  rock_paper_scissors.Rules - Player: P  Computer: PAPER
+2020-10-03 20:34:58 [main] INFO  rock_paper_scissors.Rules - Player have played 2 of 10 games
+2020-10-03 20:35:00 [main] INFO  rock_paper_scissors.Rules - Player: P  Computer: ROCK
+2020-10-03 20:35:00 [main] INFO  rock_paper_scissors.Rules - Player have played 3 of 10 games
+2020-10-03 20:35:02 [main] INFO  rock_paper_scissors.Rules - Player: R  Computer: PAPER
+2020-10-03 20:35:02 [main] INFO  rock_paper_scissors.Rules - Player have played 4 of 10 games
+2020-10-03 20:35:04 [main] INFO  rock_paper_scissors.Rules - Player: S  Computer: SCISSORS
+2020-10-03 20:35:04 [main] INFO  rock_paper_scissors.Rules - Player have played 5 of 10 games
+2020-10-03 20:35:05 [main] INFO  rock_paper_scissors.Rules - Player: S  Computer: PAPER
+2020-10-03 20:35:05 [main] INFO  rock_paper_scissors.Rules - Player have played 6 of 10 games
+2020-10-03 20:35:07 [main] INFO  rock_paper_scissors.Rules - Player: S  Computer: PAPER
+2020-10-03 20:35:07 [main] INFO  rock_paper_scissors.Rules - Player have played 7 of 10 games
+2020-10-03 20:35:09 [main] INFO  rock_paper_scissors.Rules - Player: R  Computer: PAPER
+2020-10-03 20:35:09 [main] INFO  rock_paper_scissors.Rules - Player have played 8 of 10 games
+2020-10-03 20:35:11 [main] INFO  rock_paper_scissors.Rules - Player: P  Computer: PAPER
+2020-10-03 20:35:11 [main] INFO  rock_paper_scissors.Rules - Player have played 9 of 10 games
+2020-10-03 20:35:14 [main] INFO  rock_paper_scissors.Rules - Player: P  Computer: ROCK
+2020-10-03 20:35:14 [main] INFO  rock_paper_scissors.Rules - Player have played 10 of 10 games
+2020-10-03 20:35:14 [main] INFO  rock_paper_scissors.Rules - Game over!
+2020-10-03 20:35:29 [main] INFO  rock_paper_scissors.Rules - Player entered the game
+2020-10-03 20:35:32 [main] INFO  rock_paper_scissors.Rules - Player chose 5 games
+2020-10-03 20:35:35 [main] INFO  rock_paper_scissors.Rules - Player: R  Computer: ROCK
+2020-10-03 20:35:35 [main] INFO  rock_paper_scissors.Rules - Player have played 1 of 5 games
+2020-10-03 20:35:37 [main] INFO  rock_paper_scissors.Rules - Player: P  Computer: PAPER
+2020-10-03 20:35:37 [main] INFO  rock_paper_scissors.Rules - Player have played 2 of 5 games
+2020-10-03 20:35:40 [main] INFO  rock_paper_scissors.Rules - Player: S  Computer: ROCK
+2020-10-03 20:35:40 [main] INFO  rock_paper_scissors.Rules - Player have played 3 of 5 games
+2020-10-03 20:35:43 [main] INFO  rock_paper_scissors.Rules - Player left the game by pressing exit
+2020-10-03 20:35:43 [main] INFO  rock_paper_scissors.Rules - Game over!
+2020-10-03 20:36:11 [main] INFO  rock_paper_scissors.Rules - Player entered the game
+2020-10-03 20:36:15 [main] INFO  rock_paper_scissors.Rules - Player chose 7 games
+2020-10-03 20:36:17 [main] INFO  rock_paper_scissors.Rules - Player: p  Computer: SCISSORS
+2020-10-03 20:36:17 [main] INFO  rock_paper_scissors.Rules - Player have played 1 of 7 games
+2020-10-03 20:36:20 [main] INFO  rock_paper_scissors.Rules - Player: s  Computer: SCISSORS
+2020-10-03 20:36:20 [main] INFO  rock_paper_scissors.Rules - Player have played 2 of 7 games
+2020-10-03 20:36:21 [main] INFO  rock_paper_scissors.Rules - Player: s  Computer: ROCK
+2020-10-03 20:36:21 [main] INFO  rock_paper_scissors.Rules - Player have played 3 of 7 games
+2020-10-03 20:36:24 [main] INFO  rock_paper_scissors.Rules - Player: r  Computer: ROCK
+2020-10-03 20:36:24 [main] INFO  rock_paper_scissors.Rules - Player have played 4 of 7 games
+2020-10-03 20:36:26 [main] INFO  rock_paper_scissors.Rules - Player: r  Computer: SCISSORS
+2020-10-03 20:36:26 [main] INFO  rock_paper_scissors.Rules - Player have played 5 of 7 games
+2020-10-03 20:36:27 [main] INFO  rock_paper_scissors.Rules - Player: p  Computer: SCISSORS
+2020-10-03 20:36:27 [main] INFO  rock_paper_scissors.Rules - Player have played 6 of 7 games
+2020-10-03 20:36:29 [main] INFO  rock_paper_scissors.Rules - Player: p  Computer: SCISSORS
+2020-10-03 20:36:29 [main] INFO  rock_paper_scissors.Rules - Player have played 7 of 7 games
+2020-10-03 20:36:29 [main] INFO  rock_paper_scissors.Rules - Game over!
+2020-10-03 20:36:38 [main] INFO  rock_paper_scissors.Rules - Player entered the game
+2020-10-03 20:36:43 [main] INFO  rock_paper_scissors.Rules - Player chose 3 games
+2020-10-03 20:36:45 [main] INFO  rock_paper_scissors.Rules - Player: r  Computer: PAPER
+2020-10-03 20:36:45 [main] INFO  rock_paper_scissors.Rules - Player have played 1 of 3 games
+2020-10-03 20:36:45 [main] INFO  rock_paper_scissors.Rules - Player: p  Computer: PAPER
+2020-10-03 20:36:45 [main] INFO  rock_paper_scissors.Rules - Player have played 2 of 3 games
+2020-10-03 20:36:49 [main] INFO  rock_paper_scissors.Rules - Player: s  Computer: ROCK
+2020-10-03 20:36:49 [main] INFO  rock_paper_scissors.Rules - Player have played 3 of 3 games
+2020-10-03 20:36:49 [main] INFO  rock_paper_scissors.Rules - Game over!
+2020-10-03 20:36:59 [main] INFO  rock_paper_scissors.Rules - Player entered the game
+2020-10-03 20:37:01 [main] INFO  rock_paper_scissors.Rules - Player chose 5 games
+2020-10-03 20:37:03 [main] INFO  rock_paper_scissors.Rules - Player: R  Computer: ROCK
+2020-10-03 20:37:03 [main] INFO  rock_paper_scissors.Rules - Player have played 1 of 5 games
+2020-10-03 20:37:05 [main] INFO  rock_paper_scissors.Rules - Player: R  Computer: ROCK
+2020-10-03 20:37:05 [main] INFO  rock_paper_scissors.Rules - Player have played 2 of 5 games
+2020-10-03 20:37:07 [main] INFO  rock_paper_scissors.Rules - Player: S  Computer: PAPER
+2020-10-03 20:37:07 [main] INFO  rock_paper_scissors.Rules - Player have played 3 of 5 games
+2020-10-03 20:37:09 [main] INFO  rock_paper_scissors.Rules - Player: P  Computer: SCISSORS
+2020-10-03 20:37:09 [main] INFO  rock_paper_scissors.Rules - Player have played 4 of 5 games
+2020-10-03 20:37:10 [main] INFO  rock_paper_scissors.Rules - Player: P  Computer: ROCK
+2020-10-03 20:37:10 [main] INFO  rock_paper_scissors.Rules - Player have played 5 of 5 games
+2020-10-03 20:37:10 [main] INFO  rock_paper_scissors.Rules - Game over!
+2020-10-03 20:37:22 [main] INFO  rock_paper_scissors.Rules - Player entered the game
+2020-10-03 20:37:28 [main] INFO  rock_paper_scissors.Rules - Player chose 3 games
+2020-10-03 20:37:30 [main] INFO  rock_paper_scissors.Rules - Player: r  Computer: SCISSORS
+2020-10-03 20:37:30 [main] INFO  rock_paper_scissors.Rules - Player have played 1 of 3 games
+2020-10-03 20:37:32 [main] INFO  rock_paper_scissors.Rules - Player: s  Computer: PAPER
+2020-10-03 20:37:32 [main] INFO  rock_paper_scissors.Rules - Player have played 2 of 3 games
+2020-10-03 20:37:35 [main] INFO  rock_paper_scissors.Rules - Player left the game by pressing exit
+2020-10-03 20:37:35 [main] INFO  rock_paper_scissors.Rules - Game over!
