@@ -14,11 +14,11 @@ public class ConnectionToUniversity {
             connection = getConnection();
             System.out.println("Connection to DB successful!");
 
-            System.out.println(deleteStudent(7) + " deleted.");
-            System.out.println(deleteStudent(11) + " deleted.");
-            System.out.println(deleteStudent(12) + " deleted.");
-            System.out.println(deleteStudent(14) + " deleted.");
-            System.out.println(deleteStudent(13) + " deleted.");
+//            System.out.println(deleteStudent(7) + " deleted.");
+//            System.out.println(deleteStudent(11) + " deleted.");
+//            System.out.println(deleteStudent(12) + " deleted.");
+//            System.out.println(deleteStudent(14) + " deleted.");
+//            System.out.println(deleteStudent(13) + " deleted.");
 
             addStudent("Iryna Igorivna Kompan", "AS-182", (short) 2018);
             addStudent("Volodymyr Serhiiovych Holichenko", "AS-182", (short) 2018);
@@ -30,12 +30,12 @@ public class ConnectionToUniversity {
             addStudent("Daniil Yurievich Bykov", "EAS-193", (short) 2019);
 
 
-            printAllStudents();
-            printStudentById(17);
-            printStudentById(18);
-            printStudentById(19);
-            printStudentsByName("anastasiia    bangivna    chan");
-            printStudentsByName("volodymyr        Serhiiovych    holichenko");
+//            printAllStudents();
+//            printStudentById(17);
+//            printStudentById(18);
+//            printStudentById(19);
+//            printStudentsByName("anastasiia    bangivna    chan");
+//            printStudentsByName("volodymyr        Serhiiovych    holichenko");
             connection.close();
         } catch (ClassNotFoundException | IOException | SQLException ex) {
             System.out.println("Connection failed...");
