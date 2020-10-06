@@ -28,3 +28,138 @@ You have played 2 games
 -----Score-----
 Draws:0 Computer:0  Player: 2
 
+
+You have played 3 games
+-----Score-----
+Draws:0 Computer:1  Player: 2
+
+
+You have played 3 games
+-----Score-----
+Draws:0 Computer:0  Player: 3
+
+
+You have played 5 games
+-----Score-----
+Draws:3 Computer:0  Player: 2
+
+
+You have played 1 games
+-----Score-----
+Draws:0 Computer:0  Player: 1
+
+
+You have played 3 games
+-----Score-----
+Draws:1 Computer:1  Player: 1
+
+
+You have played 3 games
+-----Score-----
+Draws:1 Computer:0  Player: 2
+
+
+You have played 0 games
+-----Score-----
+Draws:0 Computer:0  Player: 0
+
+
+You have played 3 games
+-----Score-----
+Draws:0 Computer:2  Player: 1
+
+
+You have played 0 games
+-----Score-----
+Draws:0 Computer:0  Player: 0
+
+
+You have played 3 games
+-----Score-----
+Draws:1 Computer:1  Player: 1
+
+
+You have played 0 games
+-----Score-----
+Draws:0 Computer:0  Player: 0
+
+
+You have played 0 games
+-----Score-----
+Draws:0 Computer:0  Player: 0
+
+
+You have played 1 games
+-----Score-----
+Draws:0 Computer:1  Player: 0
+
+
+You have played 3 games
+-----Score-----
+Draws:0 Computer:3  Player: 0
+
+
+You have played 0 games
+-----Score-----
+Draws:0 Computer:0  Player: 0
+
+
+You have played 0 games
+-----Score-----
+Draws:0 Computer:0  Player: 0
+
+
+You have played 0 games
+-----Score-----
+Draws:0 Computer:0  Player: 0
+
+
+You have played 3 games
+-----Score-----
+Draws:1 Computer:0  Player: 2
+
+
+You have played 7 games
+-----Score-----
+Draws:2 Computer:4  Player: 1
+
+
+You have played 4 games
+--------РАХУНОК---------
+Нічиїх: 1Комп'ютер: 2Гравець: 1
+
+
+You have played 2 games
+--------РАХУНОК---------
+Нічиїх: 0 Комп'ютер: 0 Гравець: 2
+
+
+You have played 0 games
+--------РАХУНОК---------
+Нічиїх:0 Комп'ютер: 0 Гравець:0
+
+
+You have played 0 games
+--------РАХУНОК---------
+Нічиїх:0 Комп'ютер:0 Гравець:0
+
+
+You have played 2 games
+--------РАХУНОК---------
+Нічиїх:1 Комп'ютер:1 Гравець:0
+
+
+Ти зіграв 3 ігор
+--------РАХУНОК---------
+Нічиїх:0 Комп'ютер:2 Гравець:1
+
+
+Ти зіграв 5 ігор
+--------РАХУНОК---------
+Нічиїх:5 Комп'ютер:0 Гравець:0
+
+
+Ты сыграл 2 игр(у/ы)
+--------СЧЁТ---------
+Ничьих:1 Компьютер:0 Игрок:1
+
